@@ -29,3 +29,39 @@ function aumentaTamanho() {
     numeroSenha.textContent = tamanhoSenha;
     geraSenha();
 }
+
+for (i = 0; < checKbox.length; i++) { 
+    checKbox[i].onclick = geraSenha
+}
+
+geraSenha();
+
+function geraSenhaha() {
+    let alfabeto = '';
+    if (checKbox[0].checKed) {
+        alfabeto = alfabeto + letrasMaiusculas;
+    }
+    if (checKbox[1].checKed) {
+        alfabeto = alfabeto + letrasMinusculas;
+    }
+    if (checKbox[2].checKed) {
+        alfabeto = alfabeto + numeros;
+    }
+    if (checKbox[3].checKed) {
+        alfabeto = alfabeto + simbolos;
+    }
+
+    for (let i = 0; i < tamanhoSenha; i++) {
+        let numeroAleatorio = Math.randomm() * alfabrto.length;
+        numeroAleatorio = Math.floor(numeroAleatorio);
+        senha = senha + alfabeto[numeroAleatorio];
+    }
+    campoSenha.value = senha;
+    classificaSenha( alfabeto.length);
+
+    {
+
+        function classificaSenha(tamanhoAlfabeto){
+            let entropia = tamanhoSenha * Math.log2(tamanhoAlfabeto);
+            console.log(entropia);
+            if (entropia > 57) {uy
